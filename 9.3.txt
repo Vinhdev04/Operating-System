@@ -1,0 +1,13 @@
+Đây là một chương trình C++ đơn giản, dưới đây là giải thích chi tiết cho từng dòng lệnh:
+
+1. `#include"iostream"`: Dòng này bao gồm thư viện chuẩn `iostream` của C++, cung cấp các chức năng nhập/xuất.
+
+2. `using namespace std;`: Dòng này cho phép chúng ta sử dụng các tên trong không gian tên `std` mà không cần phải ghi rõ ràng `std::` trước mỗi tên.
+
+3. `void findWaitingTime(int processes[], int n, int bt[], int wt[], int quantum)`: Hàm này tính thời gian chờ cho mỗi quy trình. Nó nhận vào một mảng các quy trình `processes`, số lượng quy trình `n`, mảng thời gian xử lý `bt`, mảng thời gian chờ `wt`, và một giá trị thời gian `quantum`.
+
+4. `void findTurnAroundTime(int processes[], int n, int bt[], int wt[],int tat[])`: Hàm này tính thời gian quay vòng cho mỗi quy trình. Nó nhận vào một mảng các quy trình `processes`, số lượng quy trình `n`, mảng thời gian xử lý `bt`, mảng thời gian chờ `wt`, và một mảng `tat` để lưu thời gian quay vòng của mỗi quy trình.
+
+5. `void findavgTime(int processes[], int n, int bt[], int quantum)`: Hàm này tính thời gian chờ trung bình và thời gian quay vòng trung bình cho tất cả các quy trình. Nó nhận vào một mảng các quy trình `processes`, số lượng quy trình `n`, mảng thời gian xử lý `bt`, và một giá trị thời gian `quantum`.
+
+6. `int main()`: Đây là hàm chính của chương trình. Nó khởi tạo một mảng các quy trình và gọi hàm `findavgTime` để tính thời gian chờ trung bình và thời gian quay vòng trung bình.

@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>: Dòng này bao gồm tất cả các thư viện chuẩn của C++.
+
+using namespace std;: Dòng này cho phép chúng ta sử dụng các tên trong không gian tên std mà không cần phải ghi rõ ràng std:: trước mỗi tên.
+
+struct Process { int pid; int bt; int art; };: Định nghĩa một cấu trúc Process với ba trường: pid (Process ID), bt (Burst Time), và art (Arrival Time).
+
+void findWaitingTime(Process proc[], int n, int wt[]): Hàm này tính thời gian chờ cho mỗi quy trình. Nó nhận vào một mảng các quy trình proc, số lượng quy trình n, và một mảng wt để lưu thời gian chờ của mỗi quy trình.
+
+void findTurnAroundTime(Process proc[], int n, int wt[], int tat[]): Hàm này tính thời gian quay vòng cho mỗi quy trình. Nó nhận vào một mảng các quy trình proc, số lượng quy trình n, mảng thời gian chờ wt, và một mảng tat để lưu thời gian quay vòng của mỗi quy trình.
+
+void findavgTime(Process proc[],int n): Hàm này tính thời gian chờ trung bình và thời gian quay vòng trung bình cho tất cả các quy trình. Nó nhận vào một mảng các quy trình proc và số lượng quy trình n.
+
+int main(): Đây là hàm chính của chương trình. Nó khởi tạo một mảng các quy trình và gọi hàm findavgTime để tính thời gian chờ trung bình và thời gian quay vòng trung bình.
